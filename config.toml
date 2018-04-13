@@ -1,0 +1,15 @@
+baseURL = "https://christin2200.github.io/blog"
+languageCode = "en-us"
+title = "chrisint2200"
+theme = "zmd"
+publishDir = "docs"
+FootnoteReturnLinkContents = "↩"
+uglyurls = true
+preserveTaxonomyNames = true
+googleAnalytics = ""
+disqusShortName = ""
+
+[params]
+    avatar = "abouts/"
+	anchor = true
+	author = "christin2200"
