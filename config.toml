@@ -10,6 +10,6 @@ googleAnalytics = ""
 disqusShortName = ""
 
 [params]
-  avatar = "Desktop/Github/blog/abouts/"
+  avatar = "abouts/"
 	anchor = true
 	author = "christin2200"
