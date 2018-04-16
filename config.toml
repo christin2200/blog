@@ -1,6 +1,6 @@
 baseURL = "https://christin2200.github.io/blog"
 languageCode = "en-us"
-title = "christin"
+title = "christin2200"
 theme = "zmd"
 publishDir = "docs"
 FootnoteReturnLinkContents = "↩"
