@@ -3,41 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://christin2200.github.io/blog/markdown-cheetsheet.html</loc>
+    <loc>https://christin.github.io/blog/markdown-cheetsheet.html</loc>
     <lastmod>2017-12-09T13:55:37+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://christin2200.github.io/blog/categories.html</loc>
+    <loc>https://christin.github.io/blog/categories.html</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://christin2200.github.io/blog/categories/cheatsheet.html</loc>
-    <lastmod>2017-12-09T13:55:37+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://christin2200.github.io/blog/tags/cheatsheet.html</loc>
+    <loc>https://christin.github.io/blog/tags/cheatsheet.html</loc>
     <lastmod>2017-12-09T13:55:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://christin2200.github.io/blog/tags/markdown.html</loc>
+    <loc>https://christin.github.io/blog/categories/cheatsheet.html</loc>
     <lastmod>2017-12-09T13:55:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://christin2200.github.io/blog/tags.html</loc>
+    <loc>https://christin.github.io/blog/tags/markdown.html</loc>
     <lastmod>2017-12-09T13:55:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://christin2200.github.io/blog/</loc>
+    <loc>https://christin.github.io/blog/tags.html</loc>
+    <lastmod>2017-12-09T13:55:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://christin.github.io/blog/</loc>
     <lastmod>2017-12-09T13:55:37+08:00</lastmod>
     <priority>0</priority>
   </url>

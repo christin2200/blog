@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on christin2200</title>
-    <link>https://christin2200.github.io/blog/categories.html</link>
-    <description>Recent content in Categories on christin2200</description>
+    <title>Categories on christin</title>
+    <link>https://christin.github.io/blog/categories.html</link>
+    <description>Recent content in Categories on christin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://christin2200.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://christin.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cheatsheet</title>
-      <link>https://christin2200.github.io/blog/categories/cheatsheet.html</link>
+      <link>https://christin.github.io/blog/categories/cheatsheet.html</link>
       <pubDate>Sat, 09 Dec 2017 13:55:37 +0800</pubDate>
       
-      <guid>https://christin2200.github.io/blog/categories/cheatsheet.html</guid>
+      <guid>https://christin.github.io/blog/categories/cheatsheet.html</guid>
       <description></description>
     </item>
     

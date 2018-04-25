@@ -1,6 +1,6 @@
-baseURL = "https://christin2200.github.io/blog"
+baseURL = "https://christin.github.io/blog"
 languageCode = "en-us"
-title = "christin2200"
+title = "christin"
 theme = "zmd"
 publishDir = "docs"
 FootnoteReturnLinkContents = "↩"
@@ -12,4 +12,4 @@ disqusShortName = ""
 [params]
   avatar = "abouts/Winnie.jpg"
 	anchor = true
-	author = "christin2200"
+	author = "christin"
