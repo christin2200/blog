@@ -19,11 +19,11 @@ math: true
 | /tmp |  暫時放置檔案資料的地方。|
 | /proc |是虛擬（假）的檔案系統，放置執行中程式的資料。|
 | /var | 系統執行中變動檔案放置的目錄，ex:log。|
-| /usr |unix software resource。|  
-| /lost+found |放置遺失的資料（孤兒）或壞掉的資料。|
+| /usr |unix software resource。|  
+| /lost+found |放置遺失的資料（孤兒）或壞掉的資料。|
 | /media | 可移除媒體裝置的掛載點，ex:USB。|
-| /bin,/usr/bin | 放置使用者可執行的binary file的目錄，ex:ls、rm。|
+| /bin,/usr/bin | 放置使用者可執行的binary file的目錄，ex:ls、rm。|
 | /sbin |放置系統管理員用的執行檔。|
 | /etc | 系統的設定檔幾乎都放在這。|
-| /dev | 裝置或設備都以檔案型態存在這個目錄，ex:鍵盤、硬碟。|
-
+| /dev | 裝置或設備都以檔案型態存在這個目錄，ex:鍵盤、硬碟。|
+
