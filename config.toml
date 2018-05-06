@@ -6,7 +6,7 @@ publishDir = "docs"
 FootnoteReturnLinkContents = "↩"
 uglyurls = true
 preserveTaxonomyNames = true
-googleAnalytics = ""
+googleAnalytics = "UA-118799054-1"
 disqusShortName = ""
 
 [params]
