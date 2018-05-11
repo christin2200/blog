@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="tw">
+    <head>
+        <title> 
+    Install Laravel 5 on Fedora | christin
+ </title>
+
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" type="image/jpeg" href="/blog/abouts/Winnie.jpg" />
+
+        
+        <link rel="stylesheet" href="/blog/style.min.css">
+
+        
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
+        
+
+        
+        
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118799054-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-118799054-1');
+            </script>
+        
+
+        
+        
+            <script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+            <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                asciimath2jax: {
+                    delimiters: [['$$','$$']]
+                },
+                tex2jax: {
+                    inlineMath: [['$[', ']$']],
+                    displayMath: [['$[[', ']]$']],
+                }
+            });
+            </script>
+        
+
+        
+        <script>
+document.addEventListener("DOMContentLoaded", function() {
+	var article = document.getElementsByTagName("article")[0];
+
+	if (typeof article == "undefined")
+		return;
+
+	var s = article.getElementsByTagName("a");
+	var i = 0;
+	var re = new RegExp("([\\.\\/\\,\\s]|\w\-)","g");
+	while (s[i] && typeof s[i].innerHTML != "undefined")
+	{
+		if (s[i].getElementsByTagName("code").length == 0)
+			s[i].innerHTML = s[i].innerHTML.replace(re,"$1<wbr>");
+		++i;
+	}
+
+	s = article.getElementsByTagName("code");
+	i = 0;
+	while (s[i] && typeof s[i].innerHTML != "undefined")
+	{
+		var parent = s[i].parentElement;
+		while (parent && parent.tagName != "PRE" && parent.tagName != "A")
+			parent = parent.parentElement;
+		if (!parent)
+			s[i].innerHTML = s[i].innerHTML.replace(re,"$1<wbr>");
+		++i;
+	}
+});
+</script>
+
+
+    </head>
+
+    <body>
+        
+        <header>
+    
+    
+    <div class="icon">
+        <a href="https://christin2200.github.io/blog"><img src="/blog/abouts/Winnie.jpg" alt="me"></a>
+    </div>
+
+    
+    <div class="name">
+        <a href="https://christin2200.github.io/blog">christin</a>
+    </div>
+
+    
+    <div class="menu">
+        <a href="/blog/abouts.html">ABOUT</a>
+        <a href="/blog/categories.html">CATEGORY</a>
+        <a href="/blog/tags.html">TAG</a>
+    </div>
+
+</header>
+
+        
+        <main>
+            
+    <article>
+
+    
+    <div class="info">
+        <div class="top">
+            <span title="Date">2018/05/10</span>
+            <span>@</span>
+            <span>
+                
+                   
+                   <a href="https://christin2200.github.io/blog/categories/laravel.html">Laravel</a>
+                
+            </span>
+        </div>
+
+        <h1 class="title">Install Laravel 5 on Fedora</h1>
+
+        <div class="bottom">
+            
+                <a href="https://christin2200.github.io/blog/tags/laravel.html">Laravel</a>
+            
+                <a href="https://christin2200.github.io/blog/tags/fedora.html">Fedora</a>
+            
+        </div>
+    </div>
+
+    
+    
+    <div class="md-content">
+        
+        
+            <div class="toc">
+                <span>TOC</span>
+                <nav id="TableOfContents">
+<ul>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#installation">Installation</a>
+<ul>
+<li><a href="#install-php-extensions">Install PHP Extensions</a></li>
+<li><a href="#install-composer">Install Composer</a></li>
+<li><a href="#install-laravel-installer">Install laravel installer</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#serve">Serve</a></li>
+</ul></li>
+<li><a href="#more-problems">More Problems</a></li>
+</ul>
+</nav>
+            </div>
+        
+        
+        
+
+<h1 id="prerequisites">Prerequisites</h1>
+
+<ol>
+<li><a href="https://developer.fedoraproject.org/start/sw/web-app/apache.html">Install Apache Web Server</a></li>
+<li><a href="https://developer.fedoraproject.org/tech/database/mariadb/about.html">Install MariaDB Relational Database Server</a></li>
+<li><a href="https://developer.fedoraproject.org/tech/languages/php/php-installation.html">Install PHP</a></li>
+</ol>
+
+<h1 id="installation">Installation</h1>
+
+<h2 id="install-php-extensions">Install PHP Extensions</h2>
+
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="c1"># Laravel required PHP extensions.
+</span><span class="c1"></span>$ sudo dnf install php php-common php-cli php-pdo php-mbstring php-zip php-xml
+<span class="c1"># Restart Apache
+</span><span class="c1"></span>$ sudo systemctl restart httpd</code></pre></div>
+
+<h2 id="install-composer">Install Composer</h2>
+
+<p>We will need composer to install laravel and it’s dependencies</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ curl -sS https://getcomposer.org/installer <span class="p">|</span> php
+$ sudo mv composer.phar /usr/local/bin/composer
+$ chmod +x /usr/local/bin/composer
+$ composer -V</code></pre></div>
+
+<h2 id="install-laravel-installer">Install laravel installer</h2>
+
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ composer global require <span class="s2">&#34;laravel/installer&#34;</span>
+<span class="c1"># Place the ~/.config/composer/vendor/bin directory in your PATH so the laravel
+</span><span class="c1"># executable can be located by your system.
+</span><span class="c1"></span>$ <span class="nb">echo</span> <span class="s1">&#39;export PATH=&#34;$PATH:$HOME/.config/composer/vendor/bin&#34;&#39;</span> &gt;&gt; ~/.bashrc</code></pre></div>
+
+<p>Restart Terminal. Now you can create a laravel project with the commands</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ laravel new ProjectName</code></pre></div>
+
+<h2 id="setup">Setup</h2>
+
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ <span class="nb">cd</span> ProjectName
+$ cp .env.example .env
+$ nano .env</code></pre></div>
+
+<p>Edit the .env file with DB_* lines with the correct info</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nv">DB_HOST</span><span class="o">=</span>localhost
+<span class="nv">DB_DATABASE</span><span class="o">=</span>laravel_equals_winning
+<span class="nv">DB_USERNAME</span><span class="o">=</span>Chur
+<span class="nv">DB_PASSWORD</span><span class="o">=</span>Chur1</code></pre></div>
+
+<h2 id="serve">Serve</h2>
+
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ php artisan serve
+# Laravel development server started on http://localhost:PORT/</code></pre></div>
+
+<h1 id="more-problems">More Problems</h1>
+
+<p>1.<code>storage</code>permissions:<code>775</code> group:<code>apache</code>
+2.application key</p>
+
+    </div>
+
+    
+    
+</article>
+
+        </main>
+
+        
+        <footer>
+    
+    <p>
+        Powered by <a href="https://gohugo.io/">Hugo</a> with theme
+        <a href="https://github.com/Superdanby/hugo-zmd-theme">zmd</a>
+    </p>
+    <p>
+        © 2018 by christin
+    </p>
+</footer>
+
+
+        
+        
+            <script>
+                anchors.options = {
+                    placement: 'right',
+                };
+                anchors.add('.md-content > h1, .md-content > h2, .md-content > h3, .md-content > h4');
+            </script>
+        
+</body>
+
+</html>

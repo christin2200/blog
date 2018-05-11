@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://christin2200.github.io/blog/install-laravel-5-on-fedora.html</loc>
+    <lastmod>2018-05-10T13:55:37+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://christin2200.github.io/blog/linux%E7%9A%84%E7%9B%AE%E9%8C%84%E9%85%8D%E7%BD%AE.html</loc>
     <lastmod>2018-04-30T13:55:37+08:00</lastmod>
   </url>
@@ -26,6 +31,24 @@
   <url>
     <loc>https://christin2200.github.io/blog/categories/cheatsheet.html</loc>
     <lastmod>2017-12-09T13:55:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://christin2200.github.io/blog/tags/fedora.html</loc>
+    <lastmod>2018-05-10T13:55:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://christin2200.github.io/blog/tags/laravel.html</loc>
+    <lastmod>2018-05-10T13:55:37+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://christin2200.github.io/blog/categories/laravel.html</loc>
+    <lastmod>2018-05-10T13:55:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -55,7 +78,7 @@
   
   <url>
     <loc>https://christin2200.github.io/blog/</loc>
-    <lastmod>2018-04-30T13:55:37+08:00</lastmod>
+    <lastmod>2018-05-10T13:55:37+08:00</lastmod>
     <priority>0</priority>
   </url>
   

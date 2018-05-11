@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Laravel on christin</title>
+    <link>https://christin2200.github.io/blog/tags/laravel.html</link>
+    <description>Recent content in Laravel on christin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 May 2018 13:55:37 +0800</lastBuildDate>
+    
+	<atom:link href="https://christin2200.github.io/blog/tags/laravel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install Laravel 5 on Fedora</title>
+      <link>https://christin2200.github.io/blog/install-laravel-5-on-fedora.html</link>
+      <pubDate>Thu, 10 May 2018 13:55:37 +0800</pubDate>
+      
+      <guid>https://christin2200.github.io/blog/install-laravel-5-on-fedora.html</guid>
+      <description>Prerequisites  Install Apache Web Server Install MariaDB Relational Database Server Install PHP  Installation Install PHP Extensions # Laravel required PHP extensions. $ sudo dnf install php php-common php-cli php-pdo php-mbstring php-zip php-xml # Restart Apache $ sudo systemctl restart httpd Install Composer We will need composer to install laravel and it’s dependencies
+$ curl -sS https://getcomposer.org/installer | php $ sudo mv composer.phar /usr/local/bin/composer $ chmod +x /usr/local/bin/composer $ composer -V Install laravel installer $ composer global require &amp;#34;laravel/installer&amp;#34; # Place the ~/.</description>
+    </item>
+    
+  </channel>
+</rss>
