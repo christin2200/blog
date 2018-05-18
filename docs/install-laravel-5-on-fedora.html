@@ -161,7 +161,12 @@ document.addEventListener("DOMContentLoaded", function() {
 <h1 id="prerequisites">Prerequisites</h1>
 
 <ol>
-<li><a href="https://developer.fedoraproject.org/start/sw/web-app/apache.html">Install Apache Web Server</a></li>
+<li><a href="https://developer.fedoraproject.org/start/sw/web-app/apache.html">Install Apache Web Server</a>
+
+<ul>
+<li><code>www</code>group:<code>apache</code></li>
+<li>restorecon -R <code>www</code></li>
+</ul></li>
 <li><a href="https://developer.fedoraproject.org/tech/database/mariadb/about.html">Install MariaDB Relational Database Server</a></li>
 <li><a href="https://developer.fedoraproject.org/tech/languages/php/php-installation.html">Install PHP</a></li>
 </ol>
