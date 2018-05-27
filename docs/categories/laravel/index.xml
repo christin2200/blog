@@ -17,7 +17,7 @@
       <pubDate>Thu, 10 May 2018 13:55:37 +0800</pubDate>
       
       <guid>https://christin2200.github.io/blog/install-laravel-5-on-fedora.html</guid>
-      <description>Prerequisites  Install Apache Web Server  wwwgroup:apache restorecon -R www  Install MariaDB Relational Database Server Install PHP  Installation Install PHP Extensions # Laravel required PHP extensions. $ sudo dnf install php php-common php-cli php-pdo php-mbstring php-zip php-xml # Restart Apache $ sudo systemctl restart httpd Install Composer We will need composer to install laravel and it’s dependencies
+      <description>Prerequisites  Install Apache Web Server  wwwgroup:apache restorecon -R www  Install MariaDB Relational Database Server Install PHP  Installation Install PHP Extensions # Laravel required PHP extensions. $ sudo dnf install php php-common php-cli php-pdo php-mbstring php-zip php-xml # Restart Apache $ sudo systemctl restart httpd Install Composer We will need composer to install laravel and it’s dependencies
 $ curl -sS https://getcomposer.org/installer | php $ sudo mv composer.</description>
     </item>
     

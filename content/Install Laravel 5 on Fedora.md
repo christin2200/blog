@@ -9,7 +9,7 @@ math: true
 # Prerequisites
 
 1. [Install Apache Web Server](https://developer.fedoraproject.org/start/sw/web-app/apache.html)
- * `www`group:`apache`
+ * `www`group:`apache`
  * restorecon -R `www`
 2. [Install MariaDB Relational Database Server](https://developer.fedoraproject.org/tech/database/mariadb/about.html)
 3. [Install PHP](https://developer.fedoraproject.org/tech/languages/php/php-installation.html)
